@@ -1,10 +1,6 @@
-// ======================================================
-// IMPORTS
-// ===========================================import { useState, useCallback, useEffect } from 'react';
+
 import { useState, useCallback, useEffect } from 'react';
-// ======================================================
-// COMPONENTE
-// ======================================================
+
 
 export default function NavMenu({ currentView, onChangeView }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,29 +10,32 @@ export default function NavMenu({ currentView, onChangeView }) {
   };
 
   return (
-    <div className="p-4 border rounded-md">
-      <h2 className="text-lg font-bold">HOLA</h2>
-
+    <div className="p-4 border rounded-md bg-amber-500 grid grid-cols-2">
+        <div>
+          <h1>FERNANDO FERNANDEZ</h1>
+        </div>
         {/* ── Nav links ── */}
-        <nav className="flex-1 py-3 px-3 flex flex-col gap-1">
+        <nav className="flex-1 py-3 px-3 left-auto flex flex-row gap-1">
           <NavLink
-            icon="◉"
-            label="Inicio"
+            label="Sobre mi"
             active={currentView === 'home'}
             onClick={() => navigate('home')}
           />
           
             <NavLink
-              icon="✎"
-              label="Sobre mi"
+              label="Proyectos"
               active={currentView === 'editor'}
               onClick={() => navigate('editor')}
             />
           
           
             <NavLink
-              icon="⚙"
-              label="Experiencia"
+              label="Habilidades"
+              active={currentView === 'admin'}
+              onClick={() => navigate('admin')}
+            />
+            <NavLink
+              label="Contacto"
               active={currentView === 'admin'}
               onClick={() => navigate('admin')}
             />
@@ -48,7 +47,7 @@ export default function NavMenu({ currentView, onChangeView }) {
   );
 }
 
-function NavLink({ icon, label, active, onClick }) {
+function NavLink({ label, active, onClick }) {
   return (
     <button
       onClick={onClick}
@@ -59,7 +58,6 @@ function NavLink({ icon, label, active, onClick }) {
                     : 'border border-transparent'
                   }`}
     >
-      <span className="text-base w-5 text-center">{icon}</span>
       {label}
     </button>
   );
