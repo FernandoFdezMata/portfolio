@@ -6,22 +6,23 @@ import About from "./sections/About"
 import Skills from "./sections/Skills"
 import Projects from "./sections/Projects"
 import Contact from "./sections/Contact"
+import { useState } from "react"
 
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col gap-56">
     <Header/>
-    <main className="gap-1">
+    <main className="flex flex-col gap-48">
       <section id="home">
         <Hero/>
       </section>
 
-      <section inputMode="about">
+      <section id="about">
         <About/>
       </section>
 
-      <section inputMode="skills">
+      <section id="skills">
         <Skills/>
       </section>
 
@@ -34,7 +35,7 @@ function App() {
       </section>
     </main>
     <Footer/>
-    </>
+    </div>
   );
 
 }

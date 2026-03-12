@@ -3,3 +3,6 @@
 
     background-color: rgb(27, 27, 27);
 }
+html {
+  scroll-behavior: smooth;
+}
