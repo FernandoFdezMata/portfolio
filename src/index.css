@@ -1,8 +1,11 @@
-@import "tailwindcss";
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-    background-color: rgb(27, 27, 27);
+:root {
+  background-color: rgb(27, 27, 27);
 }
+
 html {
   scroll-behavior: smooth;
 }
