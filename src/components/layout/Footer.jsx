@@ -1,45 +1,35 @@
-import { FaGithub, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-
 
 export default function Footer() {
     return (
-        <div className="flex flex-col w-full max-w-6xl mx-auto gap-6 px-6 py-6">
-            {/*Nombre */}
-            <div className="flex flex-row items-start justify-between text-panel-text1">
+        <footer className="flex flex-col w-full max-w-6xl mx-auto gap-6 px-6 py-6">
+
+            <div className="flex flex-row items-start justify-between">
                 <div className="flex flex-col">
-                    <div className="text-3xl font-extrabold text-panel-text1">Fernando Fernández</div>
-                    <div className="text-xl font-extrabold text-panel-text1">FULL-STACK DEVELOPER</div>
+                    <div className="text-3xl font-extrabold text-text-primary">Fernando Fernández</div>
+                    <div className="text-xl font-extrabold text-text-secondary">FULL-STACK DEVELOPER</div>
                 </div>
-                <div className="flex flex-col justify-end items-end">
+                <div className="flex flex-col justify-end items-end text-text-secondary">
                     <div>fernandofdezmata@gmail.com</div>
-                    <div>Valladolid-España</div>
+                    <div>Valladolid · España</div>
                 </div>
             </div>
-            {/*Separador */}
-            <div className="w-full h-px bg-white shrink-0" />
-            {/*Redes */}
-            <div className="flex flex-row justify-between text-panel-text1">
-                <div className="flex flex-row ">
-                    <SocialBox
-                        icon={<FaLinkedin size={18} />}
-                        href="https://linkedin.com/in/tu-perfil"
-                    />
-                    <SocialBox
-                        icon={<MdEmail size={18} />}
-                        href="mailto:fernandofdezmata@gmail.com"
-                    />
-                    <SocialBox
-                        icon={<FaGithub size={18} />}
-                        href="https://github.com/FernandoFdezMata"
-                    />
+
+            <div className="w-full h-px bg-bg-elevated shrink-0" />
+
+            <div className="flex flex-row justify-between text-text-primary">
+                <div className="flex flex-row gap-2">
+                    <SocialBox icon={<FaLinkedin size={18} />} href="https://linkedin.com/in/tu-perfil" />
+                    <SocialBox icon={<MdEmail size={18} />} href="mailto:fernandofdezmata@gmail.com" />
+                    <SocialBox icon={<FaGithub size={18} />} href="https://github.com/FernandoFdezMata" />
                 </div>
-                <div className="flex flex-row justify-between items-center">
+                <div className="flex items-center text-text-muted text-sm">
                     © 2026 Fernando Fernández
                 </div>
             </div>
-        </div>
 
+        </footer>
     );
 }
 
@@ -49,9 +39,11 @@ function SocialBox({ icon, href }) {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="border text-panel-text1 items-center justify-center gap-1 p-1  h-9 w-9 rounded-lg flex flex-row"
+            className="flex items-center justify-center h-9 w-9 rounded-lg
+            bg-bg-elevated border border-bg-elevated hover:border-accent
+            text-text-primary transition-colors duration-300"
         >
-            <div>{icon}</div>
+            {icon}
         </a>
     );
 }

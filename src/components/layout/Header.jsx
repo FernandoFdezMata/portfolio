@@ -1,25 +1,44 @@
+import useScrollSpy from "../../hooks/useScrollSpy";
+
+const navLinks = [
+  { href: "about",    label: "Sobre mí"     },
+  { href: "skills",   label: "Habilidades"  },
+  { href: "projects", label: "Proyectos"    },
+  { href: "contact",  label: "Contacto"     },
+];
+
 export default function Header() {
+  const activeId = useScrollSpy(navLinks.map(l => l.href));
+
   return (
-    //Aqui estaba todo el color
-      <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <header className="sticky top-0 z-50 w-full
+      bg-bg-base/80 backdrop-blur-md
+      border-b border-bg-elevated">
+
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
         <div>
-          <h1 className="text-xl font-bold tracking-wide text-gray-300">
-            Fernando Fernández
-          </h1>
-          <p className="text-sm text-gray-300">
-            Desarrollador Software
-          </p>
+          <p className="text-lg font-extrabold text-text-primary">Fernando Fernández</p>
+          <p className="text-sm text-text-secondary">Desarrollador Software</p>
         </div>
 
         <nav className="flex gap-8 text-sm font-medium">
-          <a href="#about"    className="hover:text-pink-400 transition text-gray-300">Sobre Mi</a>
-          <a href="#projects" className="hover:text-pink-400 transition text-gray-300 ">Proyectos</a>
-          <a href="#skills"   className="hover:text-pink-400 transition text-gray-300 ">Habilidades</a>
-          <a href="#contact"  className="hover:text-pink-400 transition text-gray-300 ">Contacto</a>
+          {navLinks.map(({ href, label }) => (
+            <a
+              key={href}
+              href={`#${href}`}
+              className={`transition-colors duration-300 ${
+                activeId === href
+                  ? "text-accent"
+                  : "text-text-secondary hover:text-accent"
+              }`}
+            >
+              {label}
+            </a>
+          ))}
         </nav>
 
       </div>
-
+    </header>
   );
 }

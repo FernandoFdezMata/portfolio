@@ -7,26 +7,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        hull: {
-          50:  '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#b9e5fe',
-          300: '#7cd3fd',
-          400: '#36bffa',
-          500: '#0ca5eb',
-          600: '#0084c9',
-          700: '#0169a3',
-          800: '#065986',
-          900: '#0b4a6f',
-          950: '#072f4a',
+        // Fondos
+        bg: {
+          base:     '#0f1117',
+          surface:  '#1a1d27',
+          elevated: '#22263a',
         },
-        panel: {
-          bg: '#545454',
-          surface: '#E4E4E5',
-          border: '#E4E4E5',
-          hover: '#152030',
-          text1: '#F7F5F5',
-          text2: '#EDEBEB',
+        // Acento azul
+        accent: {
+          DEFAULT: '#0ca5eb',
+          light:   '#36bffa',
+          dark:    '#0084c9',
+        },
+        // Textos
+        text: {
+          primary:   '#F7F5F5',
+          secondary: '#9ca3af',
+          muted:     '#6b7280',
         },
       },
       fontFamily: {
