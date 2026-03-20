@@ -36,7 +36,7 @@ export default function Contact() {
                     <div>
                         <span className="text-sm font-medium text-text-primary">ENCUÉNTRAME EN</span>
                         <div className="grid grid-cols-2 gap-2 p-2">
-                            <SocialBox icon={<FaLinkedin />} label="LinkedIn"  href="https://linkedin.com/in/tu-perfil" />
+                            <SocialBox icon={<FaLinkedin />} label="LinkedIn"  href="https://linkedin.com/in/fernando-fernández-mata-a229ba111" />
                             <SocialBox icon={<MdEmail />}    label="Email"     href="mailto:fernandofdezmata@gmail.com" />
                             <SocialBox icon={<FaGithub />}   label="GitHub"    href="https://github.com/FernandoFdezMata" />
                         </div>

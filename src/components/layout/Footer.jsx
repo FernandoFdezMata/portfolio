@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="flex flex-row items-start justify-between">
                 <div className="flex flex-col">
                     <div className="text-3xl font-extrabold text-text-primary">Fernando Fernández</div>
-                    <div className="text-xl font-extrabold text-text-secondary">FULL-STACK DEVELOPER</div>
+                    <div className="text-xl font-extrabold text-text-secondary">SOFTWARE DEVELOPER</div>
                 </div>
                 <div className="flex flex-col justify-end items-end text-text-secondary">
                     <div>fernandofdezmata@gmail.com</div>
@@ -20,7 +20,7 @@ export default function Footer() {
 
             <div className="flex flex-row justify-between text-text-primary">
                 <div className="flex flex-row gap-2">
-                    <SocialBox icon={<FaLinkedin size={18} />} href="https://linkedin.com/in/tu-perfil" />
+                    <SocialBox icon={<FaLinkedin size={18} />} href="https://linkedin.com/in/fernando-fernández-mata-a229ba111" />
                     <SocialBox icon={<MdEmail size={18} />} href="mailto:fernandofdezmata@gmail.com" />
                     <SocialBox icon={<FaGithub size={18} />} href="https://github.com/FernandoFdezMata" />
                 </div>

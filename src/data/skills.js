@@ -2,40 +2,44 @@
 
 const skills = [
   {
-    category: "Frontend",
+    category: "Lenguajes",
+    glow: "#4f9cf9",
     items: [
+      "C++",
+      "Python",
+      "Java",
       "JavaScript",
       "React",
       "HTML5",
       "CSS3",
-      "Tailwind",
-      "Responsive Design"
+      "Tailwind"
     ]
   },
   {
     category: "Herramientas",
+    glow: "#a78bfa",
     items: [
       "Git",
       "GitHub",
       "Vite",
       "VSCode",
-      "npm"
+      "npm",
+      "Qt(Python & C++)",
+      "IA/Vibe coding",
+      "TIA Portal (Siemens)"
+
     ]
   },
   {
-    category: "Backend básico",
+    category: "Robótica & Automatización",
+    glow: "#fbbf24",
     items: [
-      "Node.js",
-      "Express",
-      "REST APIs"
-    ]
-  },
-  {
-    category: "Otros",
-    items: [
-      "Linux",
-      "Docker básico",
-      "Testing básico"
+      "ROS2",
+      "PLC Siemens (SCL/KOB)",
+      "RAPID (ABB)",
+      "FANUC",
+      "AGVs",
+      "Visión Artificial"
     ]
   }
 ]

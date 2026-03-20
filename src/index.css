@@ -10,7 +10,66 @@
   body {
     @apply bg-bg-base text-text-primary;
   }
-    section[id] {
-    scroll-margin-top: 80px;
+
+  section[id] {
+    scroll-margin-top: 96px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+@keyframes fadeInBg {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.fade-in-bg {
+  opacity: 0;
+  animation: fadeInBg 1.2s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

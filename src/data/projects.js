@@ -1,16 +1,34 @@
 export default [
   {
     id: 1,
-    title: "Portfolio React",
-    description: "Portfolio personal desarrollado en React",
-    tech: ["React", "Vite", "Tailwind"],
-    github: "https://github.com/usuario/portfolio"
+    glow: "#4f9cf9",
+    title: "Desarrollo de AGVs – Synersight",
+    description: "Programación y desarrollo de vehículos guiados autónomos (AGVs): PLCs, ROS2 en C++ y Python, aplicaciones de escritorio con Qt, desarrollo y diseño de WebApp e interfaz de usuario, e integración de visión artificial.",
+    tech: ["ROS2", "C++", "Python", "Qt", "PLC", "Visión artificial", "React-JS"],
+    github: ""
   },
   {
     id: 2,
-    title: "Task Manager",
-    description: "Aplicación de gestión de tareas",
-    tech: ["React", "Node", "MongoDB"],
-    github: "https://github.com/usuario/task-manager"
+    glow: "#a78bfa",
+    title: "Robótica Industrial – ERGOS Technology",
+    description: "Programación de robots industriales y sistemas automáticos para entornos de producción durante más de 4 años.",
+    tech: ["RAPID", "FANUC", "KOP", "SCL", "Automatización"],
+    github: ""
+  },
+  {
+    id: 3,
+    glow: "#34d399",
+    title: "Visión por Computador – Integración Sensorial y Robótica",
+    description: "Desarrollo de algoritmos de visión por computador aplicados a sistemas robóticos.",
+    tech: ["Visión artificial", "Java", "Matlab"],
+    github: ""
+  },
+  {
+    id: 4,
+    glow: "#fb923c",
+    title: "Investigación en Robótica – Grupo GRAV (UJA)",
+    description: "Investigación y desarrollo en robótica, automática y visión por computador dentro del grupo GRAV de la Universidad de Jaén.",
+    tech: ["Java", "Matlab", "Python", "Investigación"],
+    github: ""
   }
 ]
