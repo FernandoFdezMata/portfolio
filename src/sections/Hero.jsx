@@ -1,4 +1,4 @@
-import heroBg from "../../public/nueva-firma-b.png";
+import heroBg from "../assets/nueva-firma-b.png";
 
 export default function Hero() {
     return (
@@ -18,7 +18,7 @@ export default function Hero() {
                     className="fade-in text-sm font-medium text-accent tracking-widest uppercase"
                     style={{ animationDelay: "0.9s" }}
                 >
-                    Disponible para trabajar
+                    EL ESFUERZO ES EL MÉTODO
                 </p>
                 <h1
                     className="fade-in text-5xl md:text-6xl font-extrabold text-text-primary leading-tight"
@@ -30,7 +30,7 @@ export default function Hero() {
                     className="fade-in text-xl text-text-secondary font-medium"
                     style={{ animationDelay: "1.5s" }}
                 >
-                    Software Developer · Robótica, Automatización & IA
+                    Software Developer · Robótica & Automatización
                 </p>
             </div>
 
@@ -38,7 +38,7 @@ export default function Hero() {
                 className="fade-in relative z-10 max-w-xl text-text-secondary"
                 style={{ animationDelay: "1.8s" }}
             >
-                Desarrollador de software con más de 7 años de experiencia en robótica industrial, sistemas autónomos y automatización. Apasionado por la tecnología, con sólida base en C++, Python y ROS2, y autodidacta en desarrollo web y nuevas tecnologías.
+                Desarrollador de software especializado en robótica industrial y automatización, con más de 7 años de experiencia en proyectos para el sector del automóvil y la manufactura. Autodidacta en desarrollo web e IA.
             </p>
 
             <div

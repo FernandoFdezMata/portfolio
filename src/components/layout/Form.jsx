@@ -48,7 +48,7 @@ export default function Form() {
                     <input
                         type="text"
                         name="nombre"
-                        placeholder="José Moreno"
+                        placeholder="José Gómez"
                         value={formData.nombre}
                         onChange={handleChange}
                         className={inputClass}
@@ -59,7 +59,7 @@ export default function Form() {
                     <input
                         type="email"
                         name="email"
-                        placeholder="jose.moreno@gmail.com"
+                        placeholder="jose.gomez@gmail.com"
                         value={formData.email}
                         onChange={handleChange}
                         className={inputClass}
@@ -72,7 +72,7 @@ export default function Form() {
                 <input
                     type="text"
                     name="asunto"
-                    placeholder="Proyecto / Colaboración / Trabajo..."
+                    placeholder="¿De qué se trata?"
                     value={formData.asunto}
                     onChange={handleChange}
                     className={inputClass}

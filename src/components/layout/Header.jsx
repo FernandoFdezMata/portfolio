@@ -1,5 +1,5 @@
 import useScrollSpy from "../../hooks/useScrollSpy";
-import bgFirma from "../../../public/nueva-firma-b.png"
+import bgFirma from "../../assets/nueva-firma-b.png"
 
 const navLinks = [
   { href: "about", label: "Sobre mí" },
@@ -29,7 +29,7 @@ export default function Header() {
 
           <div>
             <p className="text-lg font-extrabold text-text-primary">Fernando Fernández</p>
-            <p className="text-sm text-text-secondary">Software Developer · Robótica, Automatización & IA</p>
+            <p className="text-sm text-text-secondary">Software Developer · Robótica & Automatización</p>
           </div>
         </div>
 

@@ -8,8 +8,8 @@ export default function Contact() {
         <div className="flex flex-col items-center gap-5 text-text-primary w-full max-w-6xl mx-auto">
 
             <div className="w-full max-w-2xl">
-                <h1 className="text-3xl font-bold text-text-primary">Hablemos de tu</h1>
-                <h2 className="text-3xl font-bold mb-8 text-text-secondary">próximo proyecto</h2>
+                <h1 className="text-3xl font-bold text-text-primary">¿Tienes un reto en mente?</h1>
+                <h2 className="text-3xl font-bold mb-8 text-accent">Me interesa</h2>
             </div>
 
             <div className="flex flex-col md:flex-row justify-center items-start gap-16 p-2 w-full">

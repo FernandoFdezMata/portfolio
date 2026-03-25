@@ -40,7 +40,7 @@ function SkillCard({ group, index }) {
 export default function Skills() {
   return (
     <div className="max-w-6xl mx-auto text-gray-300">
-      <SectionTitle>Habilidades</SectionTitle>
+      <SectionTitle><span className="text-accent">H</span>abilidades</SectionTitle>
       <div className="grid md:grid-cols-2 gap-8">
         {skills.map((group, index) => (
           <SkillCard key={group.category} group={group} index={index} />
