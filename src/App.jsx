@@ -11,7 +11,7 @@ import { useState } from "react"
 
 function App() {
   return (
-    <div className="flex flex-col gap-44">
+    <div className="flex flex-col gap-2">
     <Header/>
     <main className="flex flex-col gap-48">
       <section id="home">

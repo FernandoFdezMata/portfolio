@@ -5,12 +5,13 @@ export default function Footer() {
     return (
         <footer className="flex flex-col w-full max-w-6xl mx-auto gap-6 px-6 py-6">
 
-            <div className="flex flex-row items-start justify-between">
+            {/* Nombre + contacto */}
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                 <div className="flex flex-col">
                     <div className="text-3xl font-extrabold text-text-primary">Fernando Fernández</div>
                     <div className="text-xl font-extrabold text-text-secondary">SOFTWARE DEVELOPER</div>
                 </div>
-                <div className="flex flex-col justify-end items-end text-text-secondary">
+                <div className="flex flex-col md:items-end text-text-secondary">
                     <div>fernandofdezmata@gmail.com</div>
                     <div>Valladolid · España</div>
                 </div>
@@ -18,13 +19,14 @@ export default function Footer() {
 
             <div className="w-full h-px bg-bg-elevated shrink-0" />
 
-            <div className="flex flex-row justify-between text-text-primary">
+            {/* Iconos + copyright */}
+            <div className="flex flex-row justify-between items-center text-text-primary">
                 <div className="flex flex-row gap-2">
                     <SocialBox icon={<FaLinkedin size={18} />} href="https://linkedin.com/in/fernando-fernández-mata-a229ba111" />
                     <SocialBox icon={<MdEmail size={18} />} href="mailto:fernandofdezmata@gmail.com" />
                     <SocialBox icon={<FaGithub size={18} />} href="https://github.com/FernandoFdezMata" />
                 </div>
-                <div className="flex items-center text-text-muted text-sm">
+                <div className="text-text-muted text-sm">
                     © 2026 Fernando Fernández
                 </div>
             </div>

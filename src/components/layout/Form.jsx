@@ -42,7 +42,7 @@ export default function Form() {
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
 
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex flex-col gap-1 flex-1">
                     <label className="text-text-primary text-sm">Nombre</label>
                     <input

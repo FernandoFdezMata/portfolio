@@ -2,7 +2,7 @@ import SectionTitle from "../components/ui/SectionTitle"
 
 export default function About() {
   return (
-    <div className="max-w-6xl mx-auto flex flex-col gap-4">
+    <div className="max-w-6xl mx-auto flex flex-col gap-4 px-6">
 
       <SectionTitle><span className="text-accent">S</span>obre mí</SectionTitle>
 

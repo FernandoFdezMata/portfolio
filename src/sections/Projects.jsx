@@ -31,7 +31,7 @@ function ProjectCard({ project, index }) {
 
 export default function Projects() {
   return (
-    <div className="max-w-6xl mx-auto text-gray-300">
+    <div className="max-w-6xl mx-auto text-gray-300 px-6">
       <SectionTitle><span className="text-accent">P</span>royectos</SectionTitle>
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project, index) => (

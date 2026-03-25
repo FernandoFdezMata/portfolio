@@ -5,7 +5,7 @@ import { BiLogoGmail } from "react-icons/bi";
 
 export default function Contact() {
     return (
-        <div className="flex flex-col items-center gap-5 text-text-primary w-full max-w-6xl mx-auto">
+        <div className="flex flex-col items-center gap-5 text-text-primary w-full max-w-6xl mx-auto px-6">
 
             <div className="w-full max-w-2xl">
                 <h1 className="text-3xl font-bold text-text-primary">¿Tienes un reto en mente?</h1>
