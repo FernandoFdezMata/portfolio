@@ -4,8 +4,8 @@ import bgFirma from "../../assets/nueva-firma-b.png";
 
 const navLinks = [
   { href: "about", label: "Sobre mí" },
-  { href: "skills", label: "Habilidades" },
   { href: "projects", label: "Proyectos" },
+  { href: "skills", label: "Habilidades" },
   { href: "contact", label: "Contacto" },
 ];
 
@@ -62,7 +62,7 @@ export default function Header() {
 
       {/* Menú desplegable móvil */}
       {menuOpen && (
-        <nav className="md:hidden flex flex-col px-6 pb-4 gap-4 text-sm font-medium border-t border-accent/20">
+        <nav className="md:hidden flex flex-col px-6 p-4 gap-4 text-sm font-medium border-t border-accent/20">
           {navLinks.map(({ href, label }) => (
             <a
               key={href}

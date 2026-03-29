@@ -1,7 +1,7 @@
 export default function Card({ children, className = "", glowColor }) {
   return (
     <div
-      className={`relative overflow-hidden bg-bg-surface border border-bg-elevated hover:border-accent transition-colors duration-300 p-4 rounded-lg ${className}`}
+      className={`relative overflow-hidden bg-bg-surface h-full border border-bg-elevated hover:border-accent transition-colors duration-300 p-4 rounded-lg ${className}`}
       style={{
         background: "linear-gradient(45deg, #13171f 0%, #0f1218 100%)",
       }}
