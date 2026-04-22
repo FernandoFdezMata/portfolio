@@ -30,5 +30,13 @@ export default [
     description: "Investigación y desarrollo en robótica, automática y visión por computador dentro del grupo GRAV de la Universidad de Jaén.",
     tech: ["Java", "Matlab", "Python", "Investigación"],
     github: ""
+  },
+  {
+    id: 5,
+    glow: "#7cebe2",
+    title: "Portfolio – Proyecto Personal",
+    description: "Desarrollo de este portfolio personal para mostrar mis proyectos y experiencia en el campo de la robótica, utilizando tecnologías modernas para una presentación atractiva y funcional.",
+    tech: ["React-JS", "CSS", "HTML", "Vite"],
+    github: "https://github.com/FernandoFdezMata/portfolio"
   }
 ]

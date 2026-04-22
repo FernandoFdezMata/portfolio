@@ -18,7 +18,7 @@ function ProjectCard({ project, index }) {
         animationDelay: inView ? `${index * 0.1}s` : "0s",
       }}
     >
-      <Card glowColor={project.glow}>
+      <Card glowColor={project.glow} href={project.github}>
         <h3 className="font-bold text-text-primary">{project.title}</h3>
         <p className="mt-2 text-text-secondary">{project.description}</p>
         <div className="mt-2 text-text-muted text-sm">
@@ -35,7 +35,7 @@ export default function Projects() {
       <SectionTitle><span className="text-accent">P</span>royectos</SectionTitle>
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
-          <ProjectCard key={project.id} project={project} index={index} />
+          <ProjectCard key={project.id} project={project} index={index}  />
         ))}
       </div>
     </div>
