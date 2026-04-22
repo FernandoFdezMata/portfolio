@@ -38,7 +38,7 @@ export default function Hero() {
                 className="fade-in relative z-10 max-w-xl text-text-secondary"
                 style={{ animationDelay: "1.8s" }}
             >
-                Desarrollador de software especializado en robótica industrial y automatización, con más de 7 años de experiencia en proyectos para el sector del automóvil y la manufactura. Autodidacta en desarrollo web e IA.
+                Desarrollador de software especializado en robótica industrial y automatización, con más de 8 años de experiencia en proyectos para el sector del automóvil y la manufactura. Autodidacta en desarrollo web e IA.
             </p>
 
             <div

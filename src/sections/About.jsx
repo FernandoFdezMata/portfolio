@@ -8,7 +8,7 @@ export default function About() {
 
       <div className="flex flex-col gap-3 max-w-2xl">
         <p className="text-text-secondary">
-          Soy Fernando, ingeniero y desarrollador de software con más de 7 años de experiencia en robótica industrial,
+          Soy Fernando, ingeniero y desarrollador de software con más de 8 años de experiencia en robótica industrial,
            sistemas autónomos y automatización en el sector del automóvil. He diseñado y programado soluciones para instalaciones robotizadas, AGVs, 
            sistemas de visión artificial y control de procesos en entornos de alta exigencia.
         </p>
