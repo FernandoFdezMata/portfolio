@@ -104,8 +104,8 @@ export default function Form() {
             <button
                 type="submit"
                 disabled={status === "loading" || status === "success"}
-                className="border rounded-lg p-2 bg-bg-elevated border-bg-elevated
-                hover:border-accent text-text-primary transition-colors duration-300
+                className="border rounded-lg p-2 bg-accent border-accent
+                hover:bg-accent/70 text-text-primary transition-colors duration-300
                 disabled:opacity-50 disabled:cursor-not-allowed"
             >
                 {status === "loading" ? "Enviando..." : "ENVIAR MENSAJE"}
