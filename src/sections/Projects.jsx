@@ -32,7 +32,7 @@ function ProjectCard({ project, index }) {
 export default function Projects() {
   return (
     <div className="max-w-6xl mx-auto text-gray-300 px-6">
-      <SectionTitle><span className="text-accent">P</span>royectos</SectionTitle>
+      <SectionTitle><span className="text-accent">P</span>royectos y <span className="text-accent">E</span>xperiencia</SectionTitle>
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={project.id} project={project} index={index}  />

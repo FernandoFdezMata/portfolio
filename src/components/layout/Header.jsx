@@ -4,7 +4,7 @@ import bgFirma from "../../assets/nueva-firma-b.png";
 
 const navLinks = [
   { href: "about", label: "Sobre mí" },
-  { href: "projects", label: "Proyectos" },
+  { href: "projects", label: "Proyectos y Experiencia" },
   { href: "skills", label: "Habilidades" },
   { href: "contact", label: "Contacto" },
 ];
